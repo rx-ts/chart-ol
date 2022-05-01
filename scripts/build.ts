@@ -27,9 +27,19 @@ const main = async () => {
         />
         <link
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css"
         />
         <style>
+          @media (prefers-color-scheme: dark) {
+            :root {
+              background-color: #0d1117;
+            }
+          }
+
+          body {
+            margin: 0;
+          }
+
           .markdown-body {
             box-sizing: border-box;
             min-width: 200px;
