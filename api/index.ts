@@ -32,7 +32,8 @@ const handler: VercelApiHandler = (req, res) => {
   let svg: string
 
   try {
-    const chart = init(undefined, theme, {
+    // type-coverage:ignore-next-line -- incorrect `echarts` typing
+    const chart = init(undefined!, theme, {
       renderer: 'svg',
       ssr: true,
       width,
